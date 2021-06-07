@@ -25,7 +25,7 @@ Invoke-WebRequest -Uri $packageUrl -OutFile $outputpath
 Expand-Archive -LiteralPath $outputpath -DestinationPath $global:pathToWorkingDir -Force
 
 # 3) Execute script
-$global:pathToAssets = "$global:pathToWorkingDir\test-main\"
+$global:pathToAssets = "$global:pathToWorkingDir\Ed-Fi-TPDM-Installer-main\"
 $pathToMainScript = "$global:pathToAssets\binaryInstall.ps1"
 Invoke-Expression -Command $pathToMainScript
 
