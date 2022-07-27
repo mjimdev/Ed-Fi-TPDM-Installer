@@ -13,6 +13,7 @@
 #Requires -Version 5
 #Requires -RunAsAdministrator
 # 1) Ensure the working directory exists
+
 $global:pathToWorkingDir = "C:\Ed-Fi\BinaryInstaller\"
 Write-Host "Step: Ensuring working path is accessible. ($global:pathToWorkingDir)"
 New-Item -ItemType Directory -Force -Path $pathToWorkingDir
